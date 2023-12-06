@@ -4,25 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img"
+    android:background="#698fa8"
     tools:context=".Database">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#B6D7B7"
-        android:backgroundTint="#B6D7B7"
+        android:background="#698fa8"
+        android:backgroundTint="#698fa8"
         android:text="Expenses"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="#29482A"
+        android:textColor="#c1eec8"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.425" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="143dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toStartOf="@+id/expenseButton"
+        app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.277" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/nameEdit"
@@ -134,8 +147,9 @@
         android:layout_width="140dp"
         android:layout_height="130dp"
         android:layout_marginStart="20dp"
-        android:background="#B6D7B7"
-        android:backgroundTint="#B6D7B7"
+        android:background="#698fa8"
+        android:backgroundTint="#698fa8"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/nameEdit"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

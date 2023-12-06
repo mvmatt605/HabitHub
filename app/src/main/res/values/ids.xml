@@ -9,4 +9,5 @@
     <item name="textView3" type="id" />
     <item name="colorSpinner" type="id" />
     <item name="deleteButton" type="id" />
+    <item name="fragment_container" type="id" />
 </resources>
