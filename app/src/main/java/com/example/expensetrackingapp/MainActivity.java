@@ -14,6 +14,8 @@ import org.eazegraph.lib.models.PieModel;
 
 public class MainActivity extends AppCompatActivity {
     Button expenseButton;
+
+    Button homeScreenButton;
     DatabaseControl control;
     // Create the object of TextView and PieChart class
     TextView tvBills, tvGroceries, tvSavings, tvExtra;
@@ -35,11 +37,20 @@ public class MainActivity extends AppCompatActivity {
         control = new DatabaseControl(getApplicationContext());
 
         expenseButton=findViewById(R.id.expenseButton);
+        homeScreenButton=findViewById(R.id.homeScreenButton);
 
         expenseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(),Database.class);
+                startActivity(i);
+            }
+        });
+
+        homeScreenButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), HomeScreen.class);
                 startActivity(i);
             }
         });

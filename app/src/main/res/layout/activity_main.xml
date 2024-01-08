@@ -10,15 +10,15 @@
     <RelativeLayout
 
         android:id="@+id/relativeLayout"
-        android:layout_width="365dp"
-        android:layout_height="539dp"
+        android:layout_width="387dp"
+        android:layout_height="535dp"
         android:layout_marginTop="56dp"
         android:background="#a0dfce"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/expenseButton"
-        app:layout_constraintVertical_bias="0.122"
+        app:layout_constraintVertical_bias="0.0"
         tools:context=".MainActivity">
 
         <!-- Card view for displaying the -->
@@ -194,7 +194,7 @@
                 <!--View to display the line-->
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="52dp"
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="20dp"
                     android:text="Expense Catergory by Percentage"
@@ -400,6 +400,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/homeScreenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="549dp"
+        android:text="Home"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expenseButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

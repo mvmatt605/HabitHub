@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "160263886716",
+    "project_id": "habithub-e82e8",
+    "storage_bucket": "habithub-e82e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160263886716:android:77f8f7998cb3b92883f6f9",
+        "android_client_info": {
+          "package_name": "com.example.expensetrackingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkFJ65b1h5EgFOlJEGKrvBih0iqSnqpd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
