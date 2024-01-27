@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:baselineAligned="false"
     tools:context=".HomeScreen">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="#698fa8"
@@ -17,39 +18,48 @@
             android:id="@+id/imageView7"
             android:layout_width="48dp"
             android:layout_height="65dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="17dp"
             android:adjustViewBounds="false"
             android:elevation="10dp"
             android:focusable="auto"
             android:foreground="@drawable/arrow"
             android:visibility="visible"
-            app:srcCompat="@drawable/arrow"
-            tools:layout_editor_absoluteX="525dp"
-            tools:layout_editor_absoluteY="369dp" />
+            app:layout_constraintBottom_toBottomOf="@+id/expenseScreenButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.769"
+            app:layout_constraintStart_toStartOf="@+id/expenseScreenButton"
+            app:layout_constraintTop_toTopOf="@+id/expenseScreenButton"
+            app:layout_constraintVertical_bias="0.111"
+            app:srcCompat="@drawable/arrow" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="143dp"
             android:layout_height="154dp"
-            android:layout_marginBottom="16dp"
-            app:layout_constraintHorizontal_bias="0.59"
+            app:layout_constraintBottom_toTopOf="@+id/expenseScreenButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.085"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.355"
             app:srcCompat="@drawable/logo" />
 
         <Button
             android:id="@+id/NutritionScreenButton"
-            android:layout_width="0dp"
+            android:layout_width="320dp"
             android:layout_height="100dp"
             android:layout_weight="1"
             android:backgroundTint="#a0dfce"
             android:text="Nutrition"
             android:textColor="#698fa8"
             android:textSize="34sp"
-            app:layout_constraintBottom_toTopOf="@+id/habitScreenButton"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/expenseScreenButton" />
+            app:layout_constraintTop_toBottomOf="@+id/expenseScreenButton"
+            app:layout_constraintVertical_bias="0.077" />
 
         <ImageView
             android:id="@+id/imageView6"
@@ -60,26 +70,29 @@
             android:focusable="auto"
             android:foreground="@drawable/arrow"
             android:visibility="visible"
-            app:srcCompat="@drawable/arrow"
-            tools:layout_editor_absoluteX="525dp"
-            tools:layout_editor_absoluteY="573dp" />
+            app:layout_constraintBottom_toBottomOf="@+id/habitScreenButton"
+            app:layout_constraintEnd_toEndOf="@+id/habitScreenButton"
+            app:layout_constraintHorizontal_bias="0.969"
+            app:layout_constraintStart_toStartOf="@+id/habitScreenButton"
+            app:layout_constraintTop_toTopOf="@+id/habitScreenButton"
+            app:layout_constraintVertical_bias="0.485"
+            app:srcCompat="@drawable/arrow" />
 
         <Button
             android:id="@+id/expenseScreenButton"
-            android:layout_width="0dp"
+            android:layout_width="320dp"
             android:layout_height="100dp"
-            android:layout_marginTop="108dp"
             android:layout_weight="1"
             android:backgroundTint="#a0dfce"
             android:text="Expenses"
             android:textColor="#698fa8"
             android:textSize="34sp"
-            app:layout_constraintBottom_toTopOf="@+id/NutritionScreenButton"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.335" />
 
         <ImageView
             android:id="@+id/imageView9"
@@ -90,15 +103,18 @@
             android:focusable="auto"
             android:foreground="@drawable/arrow"
             android:visibility="visible"
-            app:srcCompat="@drawable/arrow"
-            tools:layout_editor_absoluteX="524dp"
-            tools:layout_editor_absoluteY="669dp" />
+            app:layout_constraintBottom_toBottomOf="@+id/FitnessScreenButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.87"
+            app:layout_constraintStart_toStartOf="@+id/FitnessScreenButton"
+            app:layout_constraintTop_toTopOf="@+id/FitnessScreenButton"
+            app:layout_constraintVertical_bias="0.542"
+            app:srcCompat="@drawable/arrow" />
 
         <Button
             android:id="@+id/FitnessScreenButton"
-            android:layout_width="0dp"
+            android:layout_width="320dp"
             android:layout_height="100dp"
-            android:layout_marginBottom="150dp"
             android:layout_weight="1"
             android:backgroundTint="#a0dfce"
             android:text="Fitness"
@@ -106,33 +122,37 @@
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/habitScreenButton" />
+            app:layout_constraintTop_toBottomOf="@+id/habitScreenButton"
+            app:layout_constraintVertical_bias="0.181" />
 
         <Button
             android:id="@+id/habitScreenButton"
-            android:layout_width="0dp"
+            android:layout_width="320dp"
             android:layout_height="100dp"
             android:layout_weight="1"
             android:backgroundTint="#a0dfce"
             android:text="habits"
             android:textColor="#698fa8"
             android:textSize="34sp"
-            app:layout_constraintBottom_toTopOf="@+id/FitnessScreenButton"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/NutritionScreenButton" />
+            app:layout_constraintTop_toBottomOf="@+id/NutritionScreenButton"
+            app:layout_constraintVertical_bias="0.1" />
 
         <TextView
             android:id="@+id/trackTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="143dp"
+            android:layout_height="77dp"
             android:fontFamily="@font/calistoga"
             android:text="Track"
             android:textColor="#a0dfce"
             android:textSize="48sp"
+            android:textStyle="bold|italic"
+            android:typeface="normal"
             app:layout_constraintBottom_toTopOf="@+id/expenseScreenButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView3"
@@ -147,9 +167,13 @@
             android:focusable="auto"
             android:foreground="@drawable/arrow"
             android:visibility="visible"
-            app:srcCompat="@drawable/arrow"
-            tools:layout_editor_absoluteX="525dp"
-            tools:layout_editor_absoluteY="475dp" />
+            app:layout_constraintBottom_toBottomOf="@+id/NutritionScreenButton"
+            app:layout_constraintEnd_toEndOf="@+id/NutritionScreenButton"
+            app:layout_constraintHorizontal_bias="0.969"
+            app:layout_constraintStart_toStartOf="@+id/NutritionScreenButton"
+            app:layout_constraintTop_toTopOf="@+id/NutritionScreenButton"
+            app:layout_constraintVertical_bias="0.514"
+            app:srcCompat="@drawable/arrow" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
