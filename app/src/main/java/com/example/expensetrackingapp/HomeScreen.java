@@ -32,7 +32,7 @@ public class HomeScreen extends AppCompatActivity {
         habitScreenButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),Database.class);
+                Intent i = new Intent(getApplicationContext(),HabitData.class);
                 startActivity(i);
             }
         });
