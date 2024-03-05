@@ -23,7 +23,7 @@ public class NutritionData extends AppCompatActivity {
 
     String name,protein,carbs,fats,calories;
 
-   // FirebaseFirestore db;
+    FirebaseFirestore db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class NutritionData extends AppCompatActivity {
       //  FirebaseApp.initializeApp(this);
         setContentView(R.layout.activity_nutrition_data);
 
-      // db = FirebaseFirestore.getInstance();
+      db = FirebaseFirestore.getInstance();
 
         editTextFoodName = findViewById(R.id.editTextFoodName);
         editTextProtein =findViewById(R.id.editTextProtein);
@@ -64,27 +64,27 @@ public class NutritionData extends AppCompatActivity {
                     editTextCalories.setError("Please enter calories");
                 } else {
                     // calling method to add data to Firebase Firestore.
-                   // addDataToFirestore(name, protein, carbs, fats, calories);
+                    addDataToFirestore(name, protein, carbs, fats, calories);
                 }
             }
         });
     }
 
-//      public void addDataToFirestore(String name, String protein, String carbs, String fats, String calories){
-//        CollectionReference dbNutrition = db.collection("Nutrition");
-//
-//        NutritionDataClass nutritionDataClass = new NutritionDataClass(name, protein, carbs, fats, calories);
-//
-//        dbNutrition.add(nutritionDataClass).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-//            @Override
-//            public void onSuccess(DocumentReference documentReference) {
-//                Toast.makeText(NutritionData.this, "Your data has been added to Firebase Firestore", Toast.LENGTH_SHORT).show();
-//            }
-//        }).addOnFailureListener(new OnFailureListener() {
-//            @Override
-//            public void onFailure(@NonNull Exception e) {
-//                Toast.makeText(NutritionData.this, "Fail to add \n" + e, Toast.LENGTH_SHORT).show();
-//            }
-//        });
-//    }
+      public void addDataToFirestore(String name, String protein, String carbs, String fats, String calories){
+        CollectionReference dbNutrition = db.collection("Nutrition");
+
+        NutritionDataClass nutritionDataClass = new NutritionDataClass(name, protein, carbs, fats, calories);
+
+        dbNutrition.add(nutritionDataClass).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+            @Override
+            public void onSuccess(DocumentReference documentReference) {
+                Toast.makeText(NutritionData.this, "Your data has been added to Firebase Firestore", Toast.LENGTH_SHORT).show();
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(NutritionData.this, "Fail to add \n" + e, Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
 }
