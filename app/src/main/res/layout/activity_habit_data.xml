@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#698fa8"
     tools:context=".HabitData">
 
     <ListView
@@ -11,6 +12,7 @@
         android:layout_width="409dp"
         android:layout_height="601dp"
         android:layout_marginTop="80dp"
+        android:background="#B6D7C7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,12 +21,14 @@
     <!--Adding a TextView -->
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:gravity="center_horizontal"
-        android:text="Habits"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="30sp"
+        android:layout_width="351dp"
+        android:layout_height="133dp"
+        android:background="#B6D7C7"
+        android:gravity="center"
+        android:text="Habit List"
+        android:textColor="#29482A"
+        android:textSize="60sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/listView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
