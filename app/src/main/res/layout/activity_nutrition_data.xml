@@ -26,8 +26,8 @@
 
     <TextView
         android:id="@+id/NutritionResults"
-        android:layout_width="173dp"
-        android:layout_height="145dp"
+        android:layout_width="135dp"
+        android:layout_height="143dp"
         android:layout_marginStart="71dp"
         android:layout_marginEnd="59dp"
         android:layout_marginBottom="143dp"
@@ -37,26 +37,25 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/NutritionRecycler"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.322" />
+        app:layout_constraintVertical_bias="0.319" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/NutritionRecycler"
-        android:layout_width="169dp"
-        android:layout_height="143dp"
+        android:layout_width="99dp"
+        android:layout_height="142dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="48dp"
-        android:layout_marginBottom="18dp"
         android:background="#B6D7B7"
         android:backgroundTint="#B6D7B7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268" />
+        app:layout_constraintVertical_bias="0.25" />
 
     <Button
         android:id="@+id/addFood"

@@ -7,11 +7,6 @@ public class NutritionDataClass {
     private String dataFats;
     private String dataCalories;
 
-    //constructor
-    public NutritionDataClass(){
-
-    }
-
     public void setDataFoodItem(String dataFoodItem) {
         this.dataFoodItem = dataFoodItem;
     }
@@ -58,6 +53,10 @@ public class NutritionDataClass {
         this.dataCarbs = dataCarbs;
         this.dataFats = dataFats;
         this.dataCalories = dataCalories;
+    }
+    //constructor
+    public NutritionDataClass(){
+
     }
 
 }
