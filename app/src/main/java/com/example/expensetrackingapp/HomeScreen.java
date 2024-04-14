@@ -23,7 +23,7 @@ public class HomeScreen extends AppCompatActivity {
         expenseScreenButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                Intent i = new Intent(getApplicationContext(),Expenses.class);
                 startActivity(i);
             }
         });
