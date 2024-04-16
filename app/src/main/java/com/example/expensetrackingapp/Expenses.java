@@ -69,6 +69,7 @@ public class Expenses extends AppCompatActivity {
          Ref.addValueEventListener(new ValueEventListener() {
              @Override
              public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                 float bills = 0;
                  dataList.clear();
 
                  for (DataSnapshot snapshot : dataSnapshot.getChildren() ) {
@@ -76,12 +77,15 @@ public class Expenses extends AppCompatActivity {
                      String category = snapshot.child("category").getValue(String.class);
                      String date = snapshot.child("date").getValue(String.class);
                      String price = snapshot.child("price").getValue(String.class);
+                     if("bill".equals(category) && price != null && !price.isEmpty()) {
+                         bills = bills + Float.parseFloat(price.trim());
+                     }
 
                      String data ="("+category+") "+expense+" $"+price+" on "+ date;
                      dataList.add(data);
                  }
                  adapter.notifyDataSetChanged();
-                 Log.d(TAG, "Value is: " + ExpenseName);
+                 Log.d(TAG, "total bills: " + bills);
              }
 
              @Override

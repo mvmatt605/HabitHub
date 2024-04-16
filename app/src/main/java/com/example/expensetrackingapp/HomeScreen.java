@@ -23,7 +23,7 @@ public class HomeScreen extends AppCompatActivity {
         expenseScreenButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),Expenses.class);
+                Intent i = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(i);
             }
         });
@@ -50,7 +50,7 @@ public class HomeScreen extends AppCompatActivity {
         FitnessScreenButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),Database.class);
+                Intent i = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(i);
             }
         });

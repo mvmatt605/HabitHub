@@ -78,7 +78,7 @@ public class NutritionData extends AppCompatActivity {
                     String calories = snapshot.child("calories").getValue(String.class);
 
                     // Create a string with all the data
-                    String data = name + ": Protein: " + protein + ", Carbs: " + carbs + ", Fats: " + fats + ", Calories: " + calories;
+                    String data = name + "\nProtein: " + protein + ", Carbs: " + carbs + ", Fats: " + fats + ", Calories: " + calories;
                     dataList.add(data);
                 }
                 adapter.notifyDataSetChanged();
