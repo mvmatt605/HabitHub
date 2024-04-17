@@ -9,8 +9,8 @@
     <!--Adding Edit Text To add data to List View-->
     <EditText
         android:id="@+id/editText"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="329dp"
+        android:layout_height="569dp"
         android:ems="10"
         android:gravity="top|left"
         android:hint="hint"

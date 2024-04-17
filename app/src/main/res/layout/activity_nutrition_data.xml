@@ -4,23 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#698fa8"
+    android:background="#768A96"
     tools:context=".NutritionData">
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="386dp"
+        android:layout_height="310dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="@drawable/backgroundobj" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="383dp"
+        android:layout_height="385dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/backgroundobj" />
 
     <TextView
         android:id="@+id/title2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:background="#B6D7C7"
-        android:backgroundTint="#B6D7C7"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/roundedrecycler"
+        android:fontFamily="@font/calistoga"
         android:text="Nutrition"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="#29482A"
-        android:textStyle="bold|italic"
+        android:textColor="#29353C"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/NutritionRecycler"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageView13"
+        app:layout_constraintVertical_bias="0.022" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/NutritionRecycler"
@@ -28,41 +55,42 @@
         android:layout_height="149dp"
         android:layout_marginStart="48dp"
         android:layout_marginEnd="48dp"
-        android:background="#B6D7B7"
-        android:backgroundTint="#B6D7B7"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/roundedrecycler"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.237" />
+        app:layout_constraintVertical_bias="0.893" />
 
     <Button
         android:id="@+id/addFood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
         android:layout_marginEnd="287dp"
-        android:backgroundTint="#B6D7B7"
+        android:background="@drawable/roundedbutton"
         android:text="Add"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextCalories" />
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCalories"
+        app:layout_constraintVertical_bias="0.217" />
 
     <Button
         android:id="@+id/deleteFood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="170dp"
-        android:layout_marginEnd="27dp"
-        android:backgroundTint="#B6D7B7"
+        android:background="@drawable/roundedbutton"
         android:text="Delete"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toEndOf="@+id/addFood"
-        app:layout_constraintTop_toBottomOf="@+id/editTextCalories" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextCalories"
+        app:layout_constraintVertical_bias="0.217" />
 
     <EditText
         android:id="@+id/editTextFoodName"
@@ -70,16 +98,16 @@
         android:layout_height="50dp"
         android:layout_marginStart="101dp"
         android:layout_marginEnd="101dp"
-        android:background="#B6D7B7"
+        android:background="@drawable/roundedrecycler"
         android:ems="10"
+        android:hint="Food Name:"
         android:inputType="text"
-        android:text="Food Name:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.446" />
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        app:layout_constraintVertical_bias="0.028" />
 
     <EditText
         android:id="@+id/editTextProtein"
@@ -87,7 +115,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="102dp"
-        android:background="#B6D7B7"
+        android:background="@drawable/roundedrecycler"
         android:ems="10"
         android:hint="Protein:"
         android:inputType="numberDecimal"
@@ -104,7 +132,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="102dp"
-        android:background="#B6D7B7"
+        android:background="@drawable/roundedrecycler"
         android:ems="10"
         android:hint="Carbs:"
         android:inputType="numberDecimal"
@@ -119,7 +147,7 @@
         android:id="@+id/editTextFats"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:background="#B6D7B7"
+        android:background="@drawable/roundedrecycler"
         android:ems="10"
         android:hint="Fats:"
         android:inputType="numberDecimal"
@@ -136,7 +164,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="101dp"
         android:layout_marginEnd="100dp"
-        android:background="#B6D7B7"
+        android:background="@drawable/roundedrecycler"
         android:ems="10"
         android:hint="Calories:"
         android:inputType="numberDecimal"
@@ -145,7 +173,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextFats"
-        app:layout_constraintVertical_bias="0.122" />
+        app:layout_constraintVertical_bias="0.095" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -156,7 +184,7 @@
         app:layout_constraintEnd_toStartOf="@+id/title2"
         app:layout_constraintHorizontal_bias="0.402"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView13"
         app:layout_constraintVertical_bias="0.716"
         app:srcCompat="@drawable/logo" />
 

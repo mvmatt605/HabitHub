@@ -153,9 +153,9 @@ public class FitnessData extends  AppCompatActivity{
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference(" Fitness Data:").child(yourname);
 
-        myRef.child("monday").setValue(monday);
-        myRef.child("tuesday").setValue(tuesday);
-        myRef.child("wednesday").setValue(wednesday);
+        myRef.child("Day 1").setValue(monday);
+        myRef.child("Day 2").setValue(tuesday);
+        myRef.child("Day 3").setValue(wednesday);
        // myRef.child("yourname").setValue(yourname);
     }
 

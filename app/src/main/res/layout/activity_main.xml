@@ -4,8 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#698fa8"
+    android:background="#768A96"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="393dp"
+        android:layout_height="686dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backgroundobj" />
 
     <RelativeLayout
 
@@ -13,12 +23,12 @@
         android:layout_width="387dp"
         android:layout_height="535dp"
         android:layout_marginTop="56dp"
-        android:background="#a0dfce"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/expenseButton"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.757"
         tools:context=".MainActivity">
 
         <!-- Card view for displaying the -->
@@ -40,7 +50,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#b0eaca"
+                android:background="@drawable/roundedrecycler"
                 android:orientation="horizontal"
                 android:weightSum="2">
 
@@ -185,7 +195,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="290dp"
-                android:background="#b0eaca"
+                android:background="@drawable/roundedrecycler"
                 android:orientation="vertical">
 
                 <!--Text view to use of -->
@@ -377,28 +387,30 @@
         android:id="@+id/expenseButton"
         android:layout_width="183dp"
         android:layout_height="62dp"
-        android:backgroundTint="#698fa8"
+        android:background="@drawable/roundedbutton"
         android:fontFamily="@font/calistoga"
         android:text="expenses"
-        android:textColor="#c1eec8"
+        android:textColor="#29353C"
         android:textSize="24sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintTop_toTopOf="@+id/imageView12"
+        app:layout_constraintVertical_bias="0.06" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="143dp"
         android:layout_height="154dp"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
-        app:layout_constraintEnd_toStartOf="@+id/expenseButton"
-        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView12"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo" />
 
 

@@ -1,117 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#768A96"
     tools:context=".FitnessData">
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="364dp"
+        android:layout_height="346dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:layout_constraintVertical_bias="0.466"
+        app:srcCompat="@drawable/backgroundobj" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="367dp"
+        android:layout_height="288dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097"
+        app:srcCompat="@drawable/backgroundobj" />
 
     <Button
         android:id="@+id/addWorkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="addWorkout"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="add"
+        android:textColor="#29353C"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401" />
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="@+id/imageView18"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWednesday"
+        app:layout_constraintVertical_bias="0.6" />
 
     <EditText
         android:id="@+id/editTextMonday"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="206dp"
+        android:layout_height="40dp"
+        android:background="@drawable/roundedrecycler"
         android:ems="10"
+        android:hint="Day of Week:"
         android:inputType="text"
-        android:text="Monday"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextYourName"
-        app:layout_constraintVertical_bias="0.256" />
+        app:layout_constraintVertical_bias="0.113" />
 
     <EditText
         android:id="@+id/editTextTuesday"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:background="@drawable/roundedrecycler"
         android:ems="10"
+        android:hint="Day of Week:"
+        android:textAlignment="center"
         android:inputType="text"
-        android:text="Tuesday"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextMonday"
-        app:layout_constraintVertical_bias="0.211" />
+        app:layout_constraintVertical_bias="0.077" />
 
     <EditText
         android:id="@+id/editTextWednesday"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="211dp"
+        android:layout_height="42dp"
+        android:background="@drawable/roundedrecycler"
         android:ems="10"
+        android:hint="Day of Week:"
+        android:textAlignment="center"
         android:inputType="text"
-        android:text="Wednesday"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
         app:layout_constraintEnd_toEndOf="@+id/editTextTuesday"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTuesday"
-        app:layout_constraintVertical_bias="0.247" />
+        app:layout_constraintVertical_bias="0.144" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/FitnessRecycler"
-        android:layout_width="179dp"
-        android:layout_height="98dp"
-        android:background="#B13737"
-        app:layout_constraintBottom_toTopOf="@+id/addWorkout"
+        android:layout_width="272dp"
+        android:layout_height="121dp"
+        android:background="@drawable/roundedrecycler"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/WorkoutSplit"
-        app:layout_constraintVertical_bias="0.607" />
+        app:layout_constraintVertical_bias="0.131" />
 
     <TextView
         android:id="@+id/WorkoutSplit"
-        android:layout_width="237dp"
-        android:layout_height="78dp"
-        android:text="WorkoutSplit"
+        android:layout_width="153dp"
+        android:layout_height="65dp"
+        android:background="@drawable/roundedrecycler"
+        android:fontFamily="@font/calistoga"
+        android:text="Fitness"
+        android:textAlignment="center"
+        android:textColor="#29353C"
         android:textSize="34sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintEnd_toEndOf="@+id/imageView17"
+        app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.137" />
+        app:layout_constraintTop_toTopOf="@+id/imageView17"
+        app:layout_constraintVertical_bias="0.037" />
 
     <EditText
         android:id="@+id/editTextYourName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="30dp"
+        android:layout_width="165dp"
+        android:layout_height="48dp"
+        android:background="@drawable/roundedrecycler"
         android:ems="10"
+        android:hint="Routine Name"
         android:inputType="text"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/deleteWorkout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addWorkout" />
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+        app:layout_constraintEnd_toEndOf="@+id/imageView18"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imageView18"
+        app:layout_constraintTop_toTopOf="@+id/imageView18"
+        app:layout_constraintVertical_bias="0.077" />
 
     <Button
         android:id="@+id/deleteWorkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="1dp"
         android:text="Delete"
-        app:layout_constraintBottom_toTopOf="@+id/editTextMonday"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextYourName" />
+        android:textColor="#29353C"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+        app:layout_constraintEnd_toEndOf="@+id/imageView18"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toEndOf="@+id/addWorkout"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWednesday"
+        app:layout_constraintVertical_bias="0.607" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="125dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/FitnessRecycler"
+        app:layout_constraintEnd_toStartOf="@+id/WorkoutSplit"
+        app:layout_constraintStart_toStartOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="@+id/imageView17"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

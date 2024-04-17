@@ -4,33 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#698fa8"
+    android:background="#768A96"
     tools:context=".HabitData">
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="409dp"
-        android:layout_height="601dp"
-        android:layout_marginTop="80dp"
-        android:background="#B6D7C7"
+    <!--Adding a TextView -->
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="391dp"
+        android:layout_height="651dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/backgroundobj" />
 
-    <!--Adding a TextView -->
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="351dp"
-        android:layout_height="133dp"
-        android:background="#B6D7C7"
+        android:layout_width="289dp"
+        android:layout_height="101dp"
+        android:background="@drawable/roundedrecycler"
         android:gravity="center"
         android:text="Habit List"
-        android:textColor="#29482A"
+        android:textColor="#29353C"
         android:textSize="60sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="338dp"
+        android:layout_height="471dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/roundedrecycler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416">
+
+    </ListView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
