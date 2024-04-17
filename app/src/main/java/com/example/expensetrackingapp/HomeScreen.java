@@ -50,7 +50,7 @@ public class HomeScreen extends AppCompatActivity {
         FitnessScreenButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                Intent i = new Intent(getApplicationContext(), FitnessData.class);
                 startActivity(i);
             }
         });

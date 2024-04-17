@@ -10,4 +10,5 @@
     <item name="colorSpinner" type="id" />
     <item name="deleteButton" type="id" />
     <item name="fragment_container" type="id" />
+    <item name="editTextYourName" type="id" />
 </resources>

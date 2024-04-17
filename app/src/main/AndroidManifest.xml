@@ -35,6 +35,9 @@
             android:exported="false"
             android:windowSoftInputMode="adjustPan"/>
         <activity
+            android:name=".FitnessData"
+            android:exported="false" />
+        <activity
             android:name=".Database"
             android:exported="false">
             <meta-data
